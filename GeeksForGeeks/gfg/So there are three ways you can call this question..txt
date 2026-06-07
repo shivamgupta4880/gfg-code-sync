@@ -1,0 +1,26 @@
+/*
+Problem:
+So there are three ways you can call this question.
+
+Link:
+https://www.geeksforgeeks.org/problems/count-total-digits-in-a-number/1
+
+Difficulty:
+Unknown
+
+Language:
+Unknown
+
+Author:
+shivamgupta4880
+
+*/
+
+class Solution {
+    public static int countDigits(int n) {
+        
+        String s=Integer.toString (n);
+        return s.length();
+        
+    }
+}
