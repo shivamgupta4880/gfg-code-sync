@@ -1,0 +1,40 @@
+/*
+Problem:
+Simple Java Solution using Recursion!
+
+Link:
+https://www.geeksforgeeks.org/problems/power-set4302/1
+
+Difficulty:
+Unknown
+
+Language:
+Unknown
+
+Author:
+shivamgupta4880
+
+*/
+
+class Solution {
+    public void subset(String ans, String s , int idx, List<String>list){
+        if(idx==s.length()){
+        
+        list.add(ans);
+        return;
+        }
+         char ch=s.charAt(idx);
+        subset(ans+ch, s, idx+1,list);
+        subset(ans, s, idx+1,list);
+
+    }
+    public List<String> powerSet(String s) {
+        // Code here
+        // code here
+        List <String> list=new ArrayList<>();
+        
+        subset("",s,0,list);
+        Collections.sort(list);
+        return list;
+    }
+}
