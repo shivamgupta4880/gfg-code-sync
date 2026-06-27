@@ -20,24 +20,23 @@ class Solution {
     public void rotateMatrix(int[][] arr) {
         // code here
         int n=arr.length;
-        for(int i=0; i<n;i++){
-            for(int j=0; j<i;j++){
-                int temp = arr[i][j];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i;j++){
+                int temp=arr[i][j];
                 arr[i][j]=arr[j][i];
                 arr[j][i]=temp;
             }
         }
-        for(int j=0;j<n;j++){
-            int stcol=0, endcol=n - 1;
+        for(int j=0;j<n;j++)
+        {
+            int stcol=0, endcol= n - 1;
             while(stcol<endcol){
-                int temp= arr[stcol][j];
+                int temp = arr[stcol][j];
                 arr[stcol][j]=arr[endcol][j];
                 arr[endcol][j]=temp;
                 stcol++;
                 endcol--;
-                
             }
         }
-        
     }
 }
