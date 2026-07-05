@@ -11,12 +11,12 @@
 ---
 
 ## Tags
-- Expected Complexities
-- Paytm
-- Flipkart
-- Morgan Stanley
-- Amazon
-- Microsoft
+- Indexes of Subarray Sum
+- Missing in Array
+- Second Largest
+- Kadane's Algorithm
+- Minimum Jumps
+- Array Leaders
 
 ---
 
